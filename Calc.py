@@ -8,7 +8,7 @@ def Calc():
   print("-------------------")
   print()
   
-  IDK = input()
+IDK = input()
 
 if IDK == 1:
   NUM1 = input("First number? ")
