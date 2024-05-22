@@ -1,4 +1,7 @@
 def Calc():
+  from core import Core
+  import os
+  os.system("clear")
   print("Calc by EntityAiden")
   print("-------------------")
   print("| 1. Addition     |")
@@ -8,28 +11,33 @@ def Calc():
   print("-------------------")
   print()
   
-IDK = input()
+  IDK = input()
 
-if IDK == 1:
-  NUM1 = input("First number? ")
-  NUM2 = input("Second number? ")
-  print(NUM1 + NUM2)
-  print("prog ended")
+  if IDK == "1":
+    NUM1 = input("First number? ")
+    NUM2 = input("Second number? ")
+    print(NUM1 + NUM2)
+    print("prog ended")
+    Core()
 
-if IDK == 2:
-  NUM1 = input("First number? ")
-  NUM2 = input("Second number? ")
-  print(NUM1 - NUM2)
-  print("prog ended")
 
-if IDK == 3:
-  NUM1 = input("First number? ")
-  NUM2 = input("Second number? ")
-  print(NUM1 * NUM2)
-  print("prog ended")
+  if IDK == "2":
+    NUM1 = input("First number? ")
+    NUM2 = input("Second number? ")
+    print(NUM1 - NUM2)
+    print("prog ended")
+    Core()
 
-if IDK == 4:
-  NUM1 = input("First number? ")
-  NUM2 = input("Second number? ")
-  print(NUM1 / NUM2)
-  print("prog ended")
+  if IDK == "3":
+    NUM1 = input("First number? ")
+    NUM2 = input("Second number? ")
+    print(NUM1 * NUM2)
+    print("prog ended")
+    Core()
+
+  if IDK == "4":
+    NUM1 = input("First number? ")
+    NUM2 = input("Second number? ")
+    print(NUM1 / NUM2)
+    print("prog ended")
+    Core()
